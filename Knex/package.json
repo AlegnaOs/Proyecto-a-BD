@@ -1,0 +1,19 @@
+{
+  "name": "knex",
+  "version": "1.0.0",
+  "description": "Knex.ja es un constructor de **consultsa SQL** para Javascript, es una abstrccuib delgada en la parte superior del controlador. Se utiliza en las bases de datos relacionales(PG, MYSQL, SQL).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "knex":"knex init",
+    "knex_migrate":"knex migrate:make producto && knex migrate:make cliente && knex migrate:make venta"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "knex": "^2.5.1",
+    "pg": "^8.11.2"
+  }
+}
